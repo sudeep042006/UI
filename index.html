@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Doctor Consultation Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Online Doctor Consultation Platform</h1>
+    <nav>
+      <ul>
+        <li><a href="#doctor-signup">Doctor Sign Up</a></li>
+        <li><a href="#patient-signup">Patient Sign Up</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="doctor-signup">
+    <h2>Doctor Registration</h2>
+    <form id="doctor-registration-form">
+      <label for="doctor-name">Doctor Name:</label>
+      <input type="text" id="doctor-name" required>
+      <label for="doctor-specialty">Specialty:</label>
+      <input type="text" id="doctor-specialty" required>
+      <label for="free-session">Available Free Sessions:</label>
+      <input type="number" id="free-session" required>
+      <label for="doctor-fee">Consultation Fee:</label>
+      <input type="number" id="doctor-fee" required>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <section id="patient-signup">
+    <h2>Patient Registration</h2>
+    <form id="patient-registration-form">
+      <label for="patient-username">Username:</label>
+      <input type="text" id="patient-username" required>
+      <label for="patient-password">Password:</label>
+      <input type="password" id="patient-password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <section id="login">
+    <h2>Login</h2>
+    <form id="login-form">
+      <label for="login-username">Username:</label>
+      <input type="text" id="login-username" required>
+      <label for="login-password">Password:</label>
+      <input type="password" id="login-password" required>
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <section id="chatbot">
+    <h2>AI Chatbot</h2>
+    <textarea id="patient-symptoms" placeholder="Enter your symptoms here..."></textarea>
+    <button onclick="suggestDisease()">Suggest Disease</button>
+    <p id="disease-suggestion"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Online Doctor Consultation Platform</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
